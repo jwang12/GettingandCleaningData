@@ -1,0 +1,7 @@
+?codebook
+??codebook
+codebook("tidy_data_set.txt")
+?data.summary
+?datasummary
+?data.frame
+data.frame("tidy_data_set.txt")

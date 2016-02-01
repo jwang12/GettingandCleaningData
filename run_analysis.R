@@ -57,7 +57,7 @@ extracted.data.set <- data.set[,c(562,563, choosen.column.numbers)]
 
 ## Creating a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-molten <- melt(extracted.data.set, id.vars=c("Activity","Subject"))
-tidy.data.set <- dcast(molten, Activity + Subject ~ variable, mean)
+datamelt <- melt(extracted.data.set, id.vars=c("Activity","Subject"))
+tidydata <- dcast(datamelt, Activity + Subject ~ variable, mean)
 
-write.table(tidy.data.set, "tidy_data_set.txt", row.names=FALSE)
+write.table(tidydata, "tidydata.txt", row.names=FALSE)
